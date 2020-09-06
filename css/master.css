@@ -79,6 +79,8 @@ body {
 }
 
 @keyframes me {
-  0%     {color: black;}
-  50%    {color: white;}
+  0%     {color: black; transform: translateX(-10%);}
+  20%    {color: black;}
+  80%    {color: white;}
+  100%   {color: white; transform: translateX(10%);}
 }
