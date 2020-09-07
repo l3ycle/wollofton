@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
   <head>
-    <link rel="stylesheet" href="./css/master.css">
-    <!-- <link rel="icon" href="./src/icon.png"> -->
-    <script src="./js/master.js"></script>
     <meta charset="utf-8">
-    <title>wollofton.me</title>
+    <title>wolof|ton|me</title>
   </head>
   <body>
+    <script type="text/javascript">
+      // In index2.html
+      if (window.innerWidth < 960) {
+         window.location = "./index_phone.html";
+      }
 
-    <div class="content">
+      // In index1.html
+      if (window.innerWidth >= 960) {
+         window.location = "./index_laptop.html";
+      }
 
-      <div class="line">
-
-        <p class="left">wollof|ton</p>
-        <p class="right">not|follow</p>
-
-      </div>
-
-      <div class="line">
-
-        <p class="me">|me</p>
-
-      </div>
-
-    </div>
-
+    </script>
   </body>
 </html>
