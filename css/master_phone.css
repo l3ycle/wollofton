@@ -38,29 +38,28 @@ body {
 
 /* line */
 
-.line {
+.side {
   width: inherit;
   text-align: center;
+  display: inline-block;
 }
 
 
-/* left */
+/* top */
 
-.left {
+.top {
+  float: 0;
   margin: 1%;
-  display: inline-block;
-  margin: 0;
   color: black;
   font-size: 400%;
 }
 
 
-/* right */
+/* bottom */
 
-.right {
+.bottom {
+  left: 0;
   margin: 1%;
-  display: inline-block;
-  margin: 0;
   color: white;
   font-size: 400%;
 }
@@ -79,8 +78,8 @@ body {
 }
 
 @keyframes me {
-  0%     {color: black; transform: translateX(-173px);}
-  20%    {color: black; transform: translateX(-173px);}
-  80%    {color: white; transform: translateX(172px);}
-  100%   {color: white; transform: translateX(172px);}
+  0%     {color: black; transform: translateY(-80.4px);}
+  20%    {color: black; transform: translateY(-80.4px);}
+  80%    {color: white; transform: translateY(0px);}
+  100%   {color: white; transform: translateY(0px);}
 }
