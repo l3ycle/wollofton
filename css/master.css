@@ -7,17 +7,18 @@
 }
 
 
-@media only screen and (max-width: 1389px) {
+@media only screen and (max-width: 1389px) { /*Phone*/
   /* body */
 
   body {
-    animation-name: background_fade;
+    animation-name: background_fade_phone;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
-  @keyframes background_fade {
+  @keyframes background_fade_phone {
     0%     {background-color: white;}
     20%    {background-color: white;}
     80%    {background-color: black;}
@@ -71,33 +72,37 @@
   .me {
     font-size: 400%;
     text-align: center;
-    animation-name: me;
+    animation-name: me_phone;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 0;
+    animation-timing-function: ease-in-out;
   }
 
-  @keyframes me {
+  @keyframes me_phone {
     0%     {color: black; transform: translateY(-85px);}
-    20%    {color: black; transform: translateY(-85px);}
+    20%    {color: black; transform: translateY(-85 px);}
+    40%    {color: black;}
+    60%    {color: white;}
     80%    {color: white; transform: translateY(0px);}
     100%   {color: white; transform: translateY(0px);}
   }
 
 }
 
-@media only screen and (min-width: 1390px) {
+@media only screen and (min-width: 1390px) { /*Laptop*/
   /* body */
 
   body {
-    animation-name: background_fade;
+    animation-name: background_fade_laptop;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
-  @keyframes background_fade {
+  @keyframes background_fade_laptop {
     0%     {background-color: white;}
     20%    {background-color: white;}
     80%    {background-color: black;}
@@ -152,16 +157,19 @@
   .me {
     font-size: 400%;
     text-align: center;
-    animation-name: me;
+    animation-name: me_laptop;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 0;
+    animation-timing-function: ease-in-out;
   }
 
-  @keyframes me {
+  @keyframes me_laptop {
     0%     {color: black; transform: translateX(-173px);}
     20%    {color: black; transform: translateX(-173px);}
+    40%    {color: black;}
+    60%    {color: white;}
     80%    {color: white; transform: translateX(172px);}
     100%   {color: white; transform: translateX(172px);}
   }
