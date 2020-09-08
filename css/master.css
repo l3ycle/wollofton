@@ -7,7 +7,15 @@
 }
 
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1389px) { /*Phone*/
+=======
+/* phone css*/
+
+@media only screen and (max-width: 1389px) {
+
+
+>>>>>>> 3c8f72c68e8a9913288537e060d652c4982f7a48
   /* body */
 
   body {
@@ -91,7 +99,16 @@
 
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1390px) { /*Laptop*/
+=======
+
+/* laptop css */
+
+@media only screen and (min-width: 1390px) {
+
+
+>>>>>>> 3c8f72c68e8a9913288537e060d652c4982f7a48
   /* body */
 
   body {
