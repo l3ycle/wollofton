@@ -15,7 +15,7 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
   }
 
   @keyframes background_fade_phone {
@@ -50,20 +50,46 @@
   /* top */
 
   .left {
-    float: 0;
     margin: 1%;
-    color: black;
     font-size: 400%;
+
+    color: #000; /* Fallback */
+    color: rgba(0, 0, 0, 1);
+    animation-name: left_opacity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes left_opacity {
+    0%    {color: rgba(0, 0, 0, 1);}
+    20%   {color: rgba(0, 0, 0, 1);}
+    80%   {color: rgba(0, 0, 0, 0);}
+    100%  {color: rgba(0, 0, 0, 0);}
   }
 
 
   /* bottom */
 
   .right {
-    left: 0;
     margin: 1%;
-    color: white;
     font-size: 400%;
+
+    color: #fff; /* Fallback */
+    color: rgba(255, 255, 255, 0);
+    animation-name: right_opacity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes right_opacity {
+    0%    {color: rgba(255, 255, 255, 0);}
+    20%   {color: rgba(255, 255, 255, 0);}
+    80%   {color: rgba(255, 255, 255, 1);}
+    100%  {color: rgba(255, 255, 255, 1);}
   }
 
 
@@ -77,7 +103,7 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 0;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(.79,.14,.15,.86);
   }
 
   @keyframes me_phone {
@@ -100,7 +126,7 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
   }
 
   @keyframes background_fade_laptop {
@@ -137,8 +163,22 @@
     margin: 1%;
     display: inline-block;
     margin: 0;
-    color: black;
     font-size: 400%;
+
+    color: #000; /* Fallback */
+    color: rgba(0, 0, 0, 1);
+    animation-name: left_opacity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes left_opacity {
+    0%    {color: rgba(0, 0, 0, 1);}
+    20%   {color: rgba(0, 0, 0, 1);}
+    80%   {color: rgba(0, 0, 0, 0);}
+    100%  {color: rgba(0, 0, 0, 0);}
   }
 
 
@@ -148,8 +188,22 @@
     margin: 1%;
     display: inline-block;
     margin: 0;
-    color: white;
     font-size: 400%;
+
+    color: #fff; /* Fallback */
+    color: rgba(255, 255, 255, 0);
+    animation-name: right_opacity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes right_opacity {
+    0%    {color: rgba(255, 255, 255, 0);}
+    20%   {color: rgba(255, 255, 255, 0);}
+    80%   {color: rgba(255, 255, 255, 1);}
+    100%  {color: rgba(255, 255, 255, 1);}
   }
 
 
@@ -164,6 +218,7 @@
     animation-direction: alternate;
     margin: 0;
     animation-timing-function: ease-in-out;
+    /* animation-timing-function: cubic-bezier(.79,.14,.15,.86); */
   }
 
   @keyframes me_laptop {
