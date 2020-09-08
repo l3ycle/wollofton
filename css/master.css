@@ -218,7 +218,6 @@
     animation-direction: alternate;
     margin: 0;
     animation-timing-function: ease-in-out;
-    /* animation-timing-function: cubic-bezier(.79,.14,.15,.86); */
   }
 
   @keyframes me_laptop {
