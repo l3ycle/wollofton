@@ -1,6 +1,6 @@
 /* font */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('../fonts/orbitron.css');
 
 * {
    font-family: "Orbitron";
@@ -23,6 +23,16 @@
     20%    {background-color: white;}
     80%    {background-color: black;}
     100%   {background-color: black;}
+  }
+
+
+  /* headbar */
+
+  .headbar input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
   }
 
 
